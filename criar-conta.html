@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form >
+        <label for="name">nome</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Campo de email</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="nascimento">data de nascimento</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+
+        <label for="cidade">Cidade de Origem:</label><br>
+        <select id="cidade" name="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="vila_velha">Vila Velha</option>
+            <option value="vitoria">Vitória</option>
+            <option value="cariacica">Cariacica</option>
+        </select>
+        <br>
+
+        <label for="senha">senha:</label>
+        <input type="password" id="senha" name="senha" required minlength="8">
+        <br>
+
+        <label for="checkbox">Aceito os termos de uso</label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+        <br>
+
+        <label for="button">Criar Conta</label>
+        <input type="submit" id="button" name="button">
+    </form>
+
+</body>
+</html>
