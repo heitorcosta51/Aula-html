@@ -1,0 +1,134 @@
+/* Estiliza todos os títulos H1 da página */
+h1 {
+    color: #FF3B14;
+    text-align: center;
+}
+
+/* Estiliza apenas a imagem que possui id="imagem-filme" */
+#imagem-filme {
+    display: block; /* Permite centralização */
+    margin: auto; /* Centraliza horizontalmente */
+    box-shadow: 0px 0px 15px black; /* Cria sombra ao redor */
+}
+
+/* Estiliza o corpo inteiro do site */
+body {
+    background-color: #f4d06f; /* Cor de fundo */
+}
+
+/* Centraliza o menu de navegação */
+nav ul {
+    text-align: center;
+}
+
+/* Remove as bolinhas da lista */
+nav ul {
+    list-style: none;
+}
+
+#categorias {
+    text-align: center;
+    color: whitesmoke
+}
+
+#categorias ul {
+    list-style: none;
+}
+
+/* Coloca os itens do menu lado a lado */
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+/* Estilo principal dos títulos H1 */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Tipo da fonte */
+}
+
+/* Estilo dos títulos H2 */
+h2 {
+    text-align: center;
+    color: #FF3B14;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estiliza o cabeçalho do site */
+header {
+    background-color: #e06b54;
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estiliza todas as sections */
+section {
+    background-color: rgb(85, 51, 51);
+    width: 500px; /* Largura fixa */
+    margin: 40px auto; /* Centraliza */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estiliza campos de texto e áreas de mensagem */
+input,
+textarea {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 5px;
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estiliza os textos dos labels */
+label {
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo padrão dos botões */
+button {
+    background-color: #FF3B14;
+    color: white;
+    border: none; /* Remove borda padrão */
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor para mãozinha */
+}
+
+/* Efeito quando o mouse passa sobre o botão */
+button:hover {
+    background-color: #e06b54;
+}
+
+/* Estiliza todas as tabelas */
+table {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-collapse: collapse; /* Une as bordas */
+}
+
+#buscar {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tabelas /*/
+
+.titulo-valor {
+    background-color: #e06b54;
+}
+
+.dragao {
+    color: #e06b54;
+}
+
+.pokemon {
+    color: #e06b54;
+}
+
+.katana {
+    color: #e06b54;
+}

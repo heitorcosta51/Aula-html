@@ -1,10 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
 
 
     <header>
 
-            <h1>Minha Loja</h1>
+        <h1>
+            <img src="img/caveira.gif" alt="caveira" width="50" height="50">
+
+            Minha Loja
+
+            <img src="img/caveira.gif" alt="caveira" width="50" height="50">
+        </h1>
 
         <nav>
             <ul>
@@ -16,7 +31,8 @@
         </nav>
         <label for="buscar">Buscar produto:</label>
         <input type="search" id="buscar" name="buscar" placeholder="Digite o nome do produto">
-        <input type="submit" value="Buscar" id="button" name="button">
+
+        <input type="submit" value="Buscar" id="btn-buscar">
     </header>
 
     <main>
@@ -26,30 +42,53 @@
         <section id="inicio">
             <h2>Bem vindo a nossa loja!</h2>
 
-            <img src="img/Loja.webp" alt="loja" width="500" height="300">
+            <img src="img/killbill.jpg" id="imagem-filme" alt="loja" width="500" height="300">
         </section>
 
 
         <section id="categorias">
             <h2>Categorias</h2>
 
-            <hr>
-
-            <ul>
-                <li>Roupas</li>
-                <li>Calçados</li>
-                <li>Acessórios</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>Artefatos</li>
+                    <li>Dragão</li>
+                    <li>Armas</li>
+                </ul>
+            </nav>
         </section>
+
+        <hr>
 
         <section id="produtos">
             <h2>Nossos produtos</h2>
 
             <table border="1">
-
+                <tr class="titulo-valor">
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Foto</th>
+                </tr>
+                <tr class="dragao">
+                    <td>Dragão</td>
+                    <td>R$ 150.000,00</td>
+                    <td><img src="img/dragao.gif" alt="Dragão" width="100" height="100"></td>
+                </tr>
+                <tr class="pokemon">
+                    <td>Pokemon</td>
+                    <td>R$ 4000,00</td>
+                    <td><img src="img/Ghastly.gif" alt="pokemon" width="100" height="100"></td>
+                </tr>
+                </tr>
+                <tr class="katana">
+                    <td>Katana</td>
+                    <td>R$ 550,00</td>
+                    <td><img src="img/katana.gif" alt="espada" width="100" height="100"></td>
+                </tr>
             </table>
         </section>
 
+        <hr>
 
         <section>
             <h1>Fale Conosco</h1>
