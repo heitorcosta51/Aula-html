@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <h1>
+
+            Podenaoman
+
+        </h1>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#produtos">produtos</a></li>
+                <li><a href="#categorias">categorias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <label for="buscar">Buscar produto:</label>
+        <input type="search" id="buscar" name="buscar" placeholder="Digite o nome do produto">
+
+        <input type="submit" value="Buscar" id="btn-buscar">
+    </header>
+
+    <main>
+
+        <hr>
+
+        <section id="inicio">
+
+            <div class="card-boas-vindas">
+                <h2 class="section-title">Bem vindo a nossa loja!</h2>
+
+                <p>
+                    Descubra itens raros, colecionáveis e produtos únicos para sua coleção
+                </p>
+
+                <a href="#produtos">
+                    <button>Ver Produtos</button>
+                </a>
+
+            </div>
+            <img src="img/killbill.jpg" id="imagem-filme" alt="loja" width="500" height="300">
+        </section>
+
+
+        <section id="categorias">
+            <h2>Categorias</h2>
+
+            <nav class="menu-categorias">
+                <ul>
+                    <li>Pokemon</li>
+                    <li>Dragão</li>
+                    <li>Armas</li>
+                </ul>
+            </nav>
+        </section>
+
+        <hr>
+
+        <section id="produtos">
+            <h2>Nossos produtos</h2>
+        
+            <div class="produtos-container">
+        
+                <div class="card-produto">
+                    <img src="img/dragao.gif" alt="dragão">
+        
+                    <h3>Dragão Chinês</h3>
+
+                    <p class="estrelas">
+                        ⭐⭐⭐⭐⭐<span></span>
+                    </p>
+
+                    <p>R$ 100.500.000,00</p>
+        
+                    <button>Comprar</button>
+                </div>
+        
+                <div class="card-produto">
+                    <img src="img/Ghastly.gif" alt="pokemon">
+        
+                    <h3>Pokemon</h3>
+        
+                    <p class="estrelas">
+                        ⭐⭐⭐⭐⭐<span></span>
+                    </p>
+
+                    <p>R$ 7.500,00</p>
+        
+                    <button>Comprar</button>
+                </div>
+        
+                <div class="card-produto">
+                    <img src="img/katana.gif" alt="katana">
+        
+                    <h3>Katana</h3>
+        
+                    <p class="estrelas">
+                        ⭐⭐⭐⭐⭐<span></span>
+                    </p>
+
+                    <p>R$ 600,00</p>
+        
+                    <button>Comprar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+       <section id="contato">
+
+    <div class="card-contato">
+
+        <h2> Fale Conosco</h2>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+
+        <label for="mensagem">Mensagem</label>
+
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Podenaoman
+    </p>
+
+</body>

@@ -1,134 +1,526 @@
-/* Estiliza todos os títulos H1 da página */
-h1 {
-    color: #FF3B14;
-    text-align: center;
+/* ===========================
+   RESET E CONFIGURAÇÕES GERAIS
+   =========================== */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* Estiliza apenas a imagem que possui id="imagem-filme" */
-#imagem-filme {
-    display: block; /* Permite centralização */
-    margin: auto; /* Centraliza horizontalmente */
-    box-shadow: 0px 0px 15px black; /* Cria sombra ao redor */
-}
-
-/* Estiliza o corpo inteiro do site */
 body {
-    background-color: #f4d06f; /* Cor de fundo */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Centraliza o menu de navegação */
-nav ul {
-    text-align: center;
-}
 
-/* Remove as bolinhas da lista */
-nav ul {
-    list-style: none;
-}
+/* ===========================
+   CABEÇALHO (HEADER)
+   =========================== */
 
-#categorias {
-    text-align: center;
-    color: whitesmoke
-}
-
-#categorias ul {
-    list-style: none;
-}
-
-/* Coloca os itens do menu lado a lado */
-nav ul li {
-    display: inline;
-    margin: 15px;
-}
-
-/* Estilo principal dos títulos H1 */
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 50px; /* Tamanho da fonte */
-    font-family: Arial, sans-serif; /* Tipo da fonte */
-}
-
-/* Estilo dos títulos H2 */
-h2 {
-    text-align: center;
-    color: #FF3B14;
-    font-size: 36px;
-    font-family: Arial, sans-serif;
-}
-
-/* Estiliza o cabeçalho do site */
 header {
-    background-color: #e06b54;
-    padding: 20px; /* Espaçamento interno */
-}
+    background-color: #333;
+    color: #fff;
 
-/* Estiliza todas as sections */
-section {
-    background-color: rgb(85, 51, 51);
-    width: 500px; /* Largura fixa */
-    margin: 40px auto; /* Centraliza */
-    padding: 20px; /* Espaçamento interno */
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-/* Estiliza campos de texto e áreas de mensagem */
-input,
-textarea {
-    width: 100%; /* Ocupa toda a largura */
-    padding: 10px; /* Espaçamento interno */
-    margin-top: 5px;
-    border-radius: 5px; /* Cantos arredondados */
-}
-
-/* Estiliza os textos dos labels */
-label {
-    font-weight: bold; /* Texto em negrito */
-}
-
-/* Estilo padrão dos botões */
-button {
-    background-color: #FF3B14;
-    color: white;
-    border: none; /* Remove borda padrão */
-    padding: 12px 25px;
-    border-radius: 5px;
-    cursor: pointer; /* Muda o cursor para mãozinha */
-}
-
-/* Efeito quando o mouse passa sobre o botão */
-button:hover {
-    background-color: #e06b54;
-}
-
-/* Estiliza todas as tabelas */
-table {
-    width: 100%; /* Ocupa toda a largura disponível */
-    border-collapse: collapse; /* Une as bordas */
-}
-
-#buscar {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+}
+
+header {
+    background-color: #8d2d2d;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(201, 20, 20, 0.3);
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header {
+    background-color: #2b2b2b;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-family: arial, sans-serif;
+}
+
+header form button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+/* ===========================
+   MENU SUPERIOR
+   =========================== */
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #b4414a;
+}
+
+header h1:hover {
+    color: #b4414a;
+    transition: color 0.3s;    
+
+}
+
+
+/* ===========================
+   SEÇÃO INÍCIO
+   =========================== */
+
+#inicio {
+    background-color: #e4dcb8;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ===========================
+   TÍTULOS
+   =========================== */
+
+h2 {
+    background-color: #f4f4f4;
+
+}
+
+.card-boas-vindas {
+    background-color: white;
+    width: 700px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    
+    animation: aparecer 1s ease;
+    transition: transform 0.3s;
+}
+
+.card-boas-vindas:hover {
+    transform: translateY(-8px);
+}
+
+.card-boas-vindas h2 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card-boas-vindas p {
+    font-size: 20px;
+    color: #666;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.card-boas-vindas button {
+    background-color: #e06b54;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-boas-vindas button:hover {
+    background-color: #FF3B14;
+    transform: scale(1.05);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-boas-vindas {
+    animation: aparecer 1s ease;
+}
+
+.card-boas-vindas button:hover {
+    background-color: #FF3B14;
+
+    transform:
+        translateY(-5px);
+}
+
+#inicio h2 {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+
+}
+
+
+/* ===========================
+   SEÇÕES GERAIS
+   =========================== */
+
+section {
+    text-align: center;
+}
+
+
+/* ===========================
+   MENU DE CATEGORIAS
+   =========================== */
+
+.menu-categorias {
+    margin: 20px 0;
+}
+
+.menu-categorias ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    list-style: none;
+    padding: 0;
+}
+
+.menu-categorias li {
+    background-color: #e06b54;
+    color: white;
+
+    padding: 15px 25px;
+    border-radius: 10px;
+
+    font-weight: bold;
     cursor: pointer;
 }
 
-/* Tabelas /*/
+.menu-categorias ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
 
-.titulo-valor {
+.menu-categorias li {
     background-color: #e06b54;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.dragao {
-    color: #e06b54;
+.menu-categorias li:hover {
+    transform: translateY(-5px);
+    background-color: #ff3b14;
 }
 
-.pokemon {
-    color: #e06b54;
+
+/* ===========================
+   ANIMAÇÃO DAS CATEGORIAS
+   =========================== */
+
+.menu-categorias li:hover {
+    background-color: #FF3B14;
+
+    /* Faz o botão aumentar 5% */
+    transform: scale(1.05);
 }
 
-.katana {
-    color: #e06b54;
+
+/* ===========================
+   CONTAINER DOS PRODUTOS
+   =========================== */
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin: 20px;
+}
+
+
+/* ===========================
+   CARD DOS PRODUTOS
+   =========================== */
+
+.card-produto {
+    width: 200px;
+    height: 400px;
+
+    background-color: #f4f4f4;
+    border-radius: 10px;
+
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.2s;
+}
+
+
+/* ===========================
+   ANIMAÇÃO DOS CARDS
+   =========================== */
+
+.card-produto:hover {
+
+    /* Faz o card subir 10 pixels */
+    transform: translateY(-10px);
+}
+
+
+/* ===========================
+   IMAGEM
+   =========================== */
+
+.card-produto img {
+    width: 100%;
+    height: 200px;
+
+    /* Mantém a proporção da imagem */
+    object-fit: contain;
+}
+
+#imagem-filme {
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===========================
+   TÍTULO DO PRODUTO
+   =========================== */
+
+.card-produto h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* ===========================
+   PREÇO DO PRODUTO
+   =========================== */
+
+.preco {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+}
+
+
+/* ===========================
+   BOTÃO DO CARD
+   =========================== */
+
+.card-produto button {
+    width: 100%;
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #333;
+    color: white;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* ===========================
+   ETIQUETA DE DESCONTO
+   =========================== */
+
+.desconto {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background-color: #e06b54;
+    color: white;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   Rodapé (FOOTER)
+   =========================== */
+
+   /* ===========================
+   SEÇÃO CONTATO
+   =========================== */
+
+#contato {
+    background-color: #e4dcb8;
+    padding: 80px 20px;
+}
+
+
+/* ===========================
+   CARD CONTATO
+   =========================== */
+
+.card-contato {
+
+    background-color: white;
+
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* ===========================
+   TÍTULO DO FORMULÁRIO
+   =========================== */
+
+.card-contato h2 {
+    text-align: center;
+    background: none;
+    color: #2b2b2b;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* ===========================
+   LABELS
+   =========================== */
+
+.card-contato label {
+
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* ===========================
+   INPUTS E TEXTAREA
+   =========================== */
+
+.card-contato input,
+.card-contato textarea {
+
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+/* ===========================
+   EFEITO AO CLICAR
+   =========================== */
+
+.card-contato input:focus,
+.card-contato textarea:focus {
+
+    outline: none;
+    border-color: #e06b54;
+    box-shadow: 0 0 10px rgba(224, 107, 84, 0.4);
+}
+
+
+/* ===========================
+   ÁREA DE MENSAGEM
+   =========================== */
+
+.card-contato textarea {
+
+    min-height: 150px;
+    resize: none;
+}
+
+
+/* ===========================
+   BOTÃO
+   =========================== */
+
+.card-contato button {
+
+    background-color: #e06b54;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* ===========================
+   ANIMAÇÃO DO BOTÃO
+   =========================== */
+
+.card-contato button:hover {
+
+    background-color: #ff3b14;
+    transform: translateY(-3px);
+}
+
+.copyright {
+
+    text-align: center;
+
+    color: #bbb;
+
+    font-size: 14px;
 }
